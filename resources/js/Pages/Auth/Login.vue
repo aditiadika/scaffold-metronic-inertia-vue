@@ -78,7 +78,12 @@ const submit = () => {
                 <div class="text-center">
                     <PrimaryButton class="btn-primary" :class="{ 'opacity-25': form.processing }"
                         :disabled="form.processing">
-                        Log in
+                        <span v-if="!form.processing" class="indicator-label">
+                            Log in
+                        </span>
+                        <span v-else>
+                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                        </span>
                     </PrimaryButton>
                     <!--begin::Separator-->
                     <div class="text-center text-muted text-uppercase fw-bolder mb-5">or</div>
