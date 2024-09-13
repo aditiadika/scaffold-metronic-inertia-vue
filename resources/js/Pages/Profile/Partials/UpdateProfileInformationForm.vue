@@ -49,7 +49,7 @@ const form = useForm({
                 <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
-            <div>
+            <div class="my-3">
                 <InputLabel for="email" value="Email" />
 
                 <TextInput
@@ -85,7 +85,7 @@ const form = useForm({
                 </div>
             </div>
 
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-4 mt-3">
                 <PrimaryButton :disabled="form.processing">Save</PrimaryButton>
 
                 <Transition

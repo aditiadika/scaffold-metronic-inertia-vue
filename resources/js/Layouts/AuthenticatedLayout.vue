@@ -1,8 +1,6 @@
 <script setup>
 import Aside from '../Layouts/Partials/Aside.vue';
 import Header from '@/Layouts/Partials/Header.vue';
-import Toolbar from '@/Layouts/Partials/Toolbar.vue';
-import Footer from '@/Layouts/Partials/Footer.vue';
 </script>
 
 <template>
@@ -20,9 +18,6 @@ import Footer from '@/Layouts/Partials/Footer.vue';
                 <!--end::Header-->
                 <!--begin::Content-->
                 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-                    <!--begin::Toolbar-->
-                    <Toolbar></Toolbar>
-                    <!--end::Toolbar-->
                     <!--begin::Post-->
                     <div class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
@@ -35,7 +30,7 @@ import Footer from '@/Layouts/Partials/Footer.vue';
                 </div>
                 <!--end::Content-->
                 <!--begin::Footer-->
-                <Footer></Footer>
+                <!-- <Footer></Footer> -->
                 <!--end::Footer-->
             </div>
             <!--end::Wrapper-->
